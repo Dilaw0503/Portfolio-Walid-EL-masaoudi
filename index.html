@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walid El Masaoudi — Portfolio BUT GMP</title>
+<meta name="description" content="Portfolio BUT Genie Mecanique et Productique de Walid El Masaoudi - IUT de Bethune. Recherche de stage conception / industrialisation, automobile et motorsport.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ink:#15221a;
+    --forest:#1c2e21;
+    --forest-2:#25392a;
+    --forest-3:#2f4a33;
+    --paper:#f5f1e6;
+    --paper-2:#ece4d0;
+    --white:#fffdf8;
+    --gold:#c69a3d;
+    --gold-deep:#a2782a;
+    --sage:#6f7d54;
+    --sage-l:#e3e6d4;
+    --line:rgba(21,34,26,0.14);
+    --line-dark:rgba(245,241,230,0.16);
+    --shadow: 0 18px 40px -22px rgba(21,34,26,0.45);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;margin:0;font-weight:600;letter-spacing:-0.01em;}
+  p{margin:0;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  ul{margin:0;padding:0;list-style:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(20px,4vw,48px)}
+  .eyebrow{font-size:12.5px;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;color:var(--gold-deep)}
+  .eyebrow.on-dark{color:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14.5px;border:1.5px solid transparent;cursor:pointer;min-height:44px}
+  .btn-primary{background:var(--gold);color:var(--forest)}
+  .btn-primary:hover{background:var(--gold-deep)}
+  .btn-outline{border-color:var(--line-dark);color:var(--white)}
+  .btn-outline:hover{border-color:var(--gold)}
+  .btn-outline-dark{border-color:var(--line);color:var(--ink)}
+  .btn-outline-dark:hover{border-color:var(--forest)}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(245,241,230,0.08);border:1px solid var(--line-dark);font-size:13px;color:var(--white)}
+  .badge{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;font-family:'Fraunces',serif;font-weight:700;font-size:22px;flex-shrink:0}
+  .badge-A{background:var(--gold);color:var(--forest)}
+  .badge-B{background:var(--sage-l);color:var(--sage)}
+  .tag{display:inline-flex;padding:6px 12px;border-radius:999px;background:var(--paper-2);font-size:12.5px;font-weight:600;color:var(--forest-2);border:1px solid var(--line)}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+  .section{padding-block:clamp(56px,8vw,104px)}
+  .section-head{max-width:640px;margin-bottom:clamp(32px,5vw,56px)}
+  .section-head h2{font-size:clamp(28px,3.4vw,42px);margin-top:10px;font-style:italic}
+  .divider{height:1px;background:var(--line);border:0}
+  nav a.navlink:hover{color:var(--gold-deep)}
+  .icon{width:20px;height:20px;flex-shrink:0}
+  @media (max-width:860px){
+    .grid-2{grid-template-columns:1fr !important}
+    .grid-4{grid-template-columns:1fr 1fr !important}
+    .project-row{grid-template-columns:1fr !important}
+    .project-row .proj-media{order:1 !important}
+    .project-row .proj-text{order:2 !important}
+    .navlinks{display:none !important}
+    .hero-badges{flex-wrap:wrap}
+  }
+  @media (max-width:560px){
+    .grid-4{grid-template-columns:1fr !important}
+    .hero-title{font-size:clamp(38px,11vw,56px) !important}
+  }
+</style>
+</head>
+<body>
+<div style="width:100%;min-height:100vh;background:var(--paper);">
+
+  <!-- NAV -->
+  <header style="position:sticky;top:0;z-index:40;background:rgba(245,241,230,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:76px;">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1M18.4 18.4l-2.1-2.1M7.7 7.7 5.6 5.6"/></svg>
+        <span style="font-family:'Fraunces',serif;font-weight:700;font-size:18px;">W. El&nbsp;Masaoudi</span>
+      </a>
+      <nav class="navlinks" style="display:flex;gap:30px;font-size:14px;font-weight:600;">
+        <a class="navlink" href="#profil">Profil</a>
+        <a class="navlink" href="#competences">Compétences</a>
+        <a class="navlink" href="#projets">Projets</a>
+        <a class="navlink" href="#qualite">Qualité</a>
+        <a class="navlink" href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-outline-dark" style="padding:10px 18px;">Me contacter</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="position:relative;overflow:hidden;background:var(--forest);color:var(--white);">
+    <img src="images/hero-cnc.jpg" alt="Centre d'usinage CN Haas en atelier" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.34;">
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg, rgba(28,46,33,0.98) 12%, rgba(28,46,33,0.86) 46%, rgba(28,46,33,0.55) 100%);"></div>
+    <div class="wrap" style="position:relative;padding-block:clamp(64px,11vw,128px);">
+      <span class="eyebrow on-dark">BUT Génie Mécanique &amp; Productique · IUT de Béthune · Université d'Artois</span>
+      <h1 class="hero-title" style="font-size:clamp(46px,7vw,80px);margin-top:16px;line-height:1.02;">
+        Walid<br>El&nbsp;Masaoudi
+      </h1>
+      <p style="font-family:'Fraunces',serif;font-style:italic;font-size:clamp(18px,2.1vw,24px);color:var(--gold);margin-top:18px;max-width:640px;">
+        De la pré-étude fonctionnelle à la pièce usinée — méthode, précision, esprit critique.
+      </p>
+      <p style="margin-top:18px;max-width:560px;font-size:15.5px;color:rgba(255,253,248,0.82);">
+        2ᵉ année BUT GMP, en recherche d'un stage conception / industrialisation dans l'automobile —
+        de la mécanique de série au sport automobile et au motorsport — du bureau d'études à l'atelier.
+      </p>
+      <div class="hero-badges" style="display:flex;gap:12px;margin-top:32px;">
+        <div class="pill">
+          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M8 2.5v4M16 2.5v4M3 9.5h18"/></svg>
+          Stage 10 semaines · 18 janv. – 26 mars 2027
+        </div>
+        <div class="pill">
+          <svg class="icon" style="width:16px;height:16px" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M12 2 3 6l9 4 9-4-9-4Z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+          Bureau d'études · Industrialisation · Automobile et Motorsport
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;margin-top:40px;flex-wrap:wrap;">
+        <a href="#contact" class="btn btn-primary">Me contacter</a>
+        <a href="#competences" class="btn btn-outline">Voir les compétences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="section">
+    <div class="wrap grid-2" style="display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(32px,5vw,64px);align-items:start;">
+      <div>
+        <span class="eyebrow">Profil</span>
+        <h2 style="font-size:clamp(26px,3vw,36px);margin-top:10px;font-style:italic;">Une mécanique qui carbure à la précision</h2>
+        <p style="margin-top:22px;font-size:16.5px;color:var(--forest-2);max-width:560px;">
+          Passionné par l'ingénierie automobile de haute performance et la mécanique de précision — du sim racing
+          au sport automobile — j'aime comprendre, analyser et améliorer le fonctionnement des systèmes mécaniques.
+        </p>
+        <p style="margin-top:16px;font-size:16.5px;color:var(--forest-2);max-width:560px;">
+          Ma méthode de travail s'appuie sur trois temps : <strong>décrire</strong> le contexte d'un projet,
+          <strong>agir</strong> avec les bons outils, puis <strong>faire le bilan</strong> pour progresser —
+          appliquée à chaque compétence du référentiel BUT GMP : Spécifier, Développer, Réaliser, Exploiter.
+        </p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;">
+          <span class="tag">Autodesk Inventor · CAO/FAO</span>
+          <span class="tag">Cotation GPS (ISO)</span>
+          <span class="tag">Usinage CN conversationnel</span>
+          <span class="tag">Impression 3D</span>
+          <span class="tag">ISO 9001 §8.7</span>
+          <span class="tag">Gestion de projet (Gantt)</span>
+        </div>
+      </div>
+      <div class="card" style="padding:28px;">
+        <h3 style="font-size:18px;">En bref</h3>
+        <ul style="margin-top:18px;display:flex;flex-direction:column;gap:16px;">
+          <li style="display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;">
+            <span style="color:var(--forest-2);font-size:14px;">Formation</span>
+            <span style="font-weight:600;text-align:right;font-size:14px;">BUT GMP, 2ᵉ année<br>IUT de Béthune</span>
+          </li>
+          <li style="display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;">
+            <span style="color:var(--forest-2);font-size:14px;">Recherche</span>
+            <span style="font-weight:600;text-align:right;font-size:14px;">Stage conception /<br>industrialisation</span>
+          </li>
+          <li style="display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;">
+            <span style="color:var(--forest-2);font-size:14px;">Secteur visé</span>
+            <span style="font-weight:600;text-align:right;font-size:14px;">Automobile (général)<br>et motorsport</span>
+          </li>
+          <li style="display:flex;justify-content:space-between;gap:12px;">
+            <span style="color:var(--forest-2);font-size:14px;">Mobilité</span>
+            <span style="font-weight:600;text-align:right;font-size:14px;">France entière</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="section" style="background:var(--paper-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Référentiel BUT GMP</span>
+        <h2>Quatre compétences, quatre niveaux assumés</h2>
+        <p style="margin-top:14px;font-size:15.5px;color:var(--forest-2);">
+          Auto-évaluation détaillée sur l'échelle A (autonome) → D, appuyée sur des preuves concrètes
+          de chaque SAÉ et TP de l'année.
+        </p>
+      </div>
+
+      <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+
+        <div class="card" style="padding:26px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Fraunces',serif;font-size:13px;color:var(--forest-2);">01</span>
+            <div class="badge badge-B">B</div>
+          </div>
+          <h3 style="font-size:19px;margin-top:14px;">Spécifier</h3>
+          <p style="font-size:13.5px;color:var(--forest-2);margin-top:8px;">
+            Analyse fonctionnelle (bête à cornes, pieuvre) du suiveur de soleil ; lecture d'un plan de fonderie
+            et cotation GPS.
+          </p>
+          <p style="font-size:12px;color:var(--sage);margin-top:14px;font-weight:600;">
+            Axe : décoder plus vite les normes GPS complexes.
+          </p>
+        </div>
+
+        <div class="card" style="padding:26px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Fraunces',serif;font-size:13px;color:var(--forest-2);">02</span>
+            <div class="badge badge-A">A</div>
+          </div>
+          <h3 style="font-size:19px;margin-top:14px;">Développer</h3>
+          <p style="font-size:13.5px;color:var(--forest-2);margin-top:8px;">
+            Modélisation et assemblage sans interférence sous Inventor ; stratégies FAO et génération
+            du G-code par post-processeur.
+          </p>
+          <p style="font-size:12px;color:var(--sage);margin-top:14px;font-weight:600;">
+            Axe : s'affranchir des abaques, viser le multi-axes.
+          </p>
+        </div>
+
+        <div class="card" style="padding:26px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Fraunces',serif;font-size:13px;color:var(--forest-2);">03</span>
+            <div class="badge badge-B">B</div>
+          </div>
+          <h3 style="font-size:19px;margin-top:14px;">Réaliser</h3>
+          <p style="font-size:13.5px;color:var(--forest-2);margin-top:8px;">
+            Impression 3D (tolérances sur rails), usinage CN, fiche de non-conformité NC-2025-014
+            formalisée selon la méthode 5M.
+          </p>
+          <p style="font-size:12px;color:var(--sage);margin-top:14px;font-weight:600;">
+            Axe : gagner en vitesse de réglage machine.
+          </p>
+        </div>
+
+        <div class="card" style="padding:26px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Fraunces',serif;font-size:13px;color:var(--forest-2);">04</span>
+            <div class="badge badge-B">B</div>
+          </div>
+          <h3 style="font-size:19px;margin-top:14px;">Exploiter</h3>
+          <p style="font-size:13.5px;color:var(--forest-2);margin-top:8px;">
+            Anglais technique (exposé), planification par diagramme de Gantt et gestion d'équipe
+            (projet Gear &amp; Quiz).
+          </p>
+          <p style="font-size:12px;color:var(--sage);margin-top:14px;font-weight:600;">
+            Axe : aisance orale en anglais, pilotage par KPI.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Preuves &amp; réalisations</span>
+        <h2>Du modèle numérique à la pièce en main</h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:clamp(48px,6vw,80px);">
+
+        <!-- Projet 1 : ECU CAO -->
+        <div class="project-row" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+          <div class="proj-media" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <img src="images/cao-ecu.jpg" alt="Modélisation CAO du support d'ECU sous Inventor" style="width:100%;height:280px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);">
+            <img src="images/fao-sim.jpg" alt="Simulation FAO des trajectoires d'usinage" style="width:100%;height:280px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);margin-top:32px;">
+          </div>
+          <div class="proj-text">
+            <span class="eyebrow">SAÉ 1.03 · SAÉ 2.03</span>
+            <h3 style="font-size:24px;margin-top:10px;">Support d'ECU — de la CAO au G-code</h3>
+            <p style="margin-top:14px;color:var(--forest-2);font-size:15px;">
+              Conception d'un support d'ECU sur mesure pour un système de guidage linéaire : modélisation 3D
+              sous Autodesk Inventor, assemblage virtuel sans interférence, puis développement complet du
+              processus d'usinage FAO — stratégies de coupe, calcul des conditions de coupe, simulation des
+              trajectoires et génération du programme ISO (G-code) via post-processeur.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+              <span class="tag">Inventor CAO</span><span class="tag">FAO / CAM</span><span class="tag">G-code ISO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 : fonderie -->
+        <div class="project-row" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+          <div class="proj-text" style="order:2;">
+            <span class="eyebrow">Industrialisation · Méthodes</span>
+            <h3 style="font-size:24px;margin-top:10px;">Pièce de fonderie — cotation GPS &amp; isostatisme</h3>
+            <p style="margin-top:14px;color:var(--forest-2);font-size:15px;">
+              Définition du processus d'élaboration et d'usinage d'un couvercle d'arbre brut de fonderie :
+              repérage des surfaces fonctionnelles, définition d'un isostatisme adapté à un brut coulé,
+              respect du transfert de cotes et gestion des surépaisseurs de matière.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+              <span class="tag">Cotation GPS (ISO)</span><span class="tag">Isostatisme</span><span class="tag">Gamme d'usinage</span>
+            </div>
+          </div>
+          <div class="proj-media" style="order:1;">
+            <img src="images/fonderie-piece.jpg" alt="Pièce brute de fonderie avec son plan de définition" style="width:100%;height:420px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);">
+          </div>
+        </div>
+
+        <!-- Projet 3 : usinage CN -->
+        <div class="project-row" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+          <div class="proj-media" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <img src="images/atelier-usinage.jpg" alt="Brut aluminium bridé en étau sous la fraiseuse CN" style="width:100%;height:280px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);">
+            <img src="images/dcn-ecran.jpg" alt="Écran de programmation conversationnelle, cycle poche circulaire" style="width:100%;height:280px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);margin-top:32px;">
+          </div>
+          <div class="proj-text">
+            <span class="eyebrow">TP Production · Fraiseuse CN Demeter</span>
+            <h3 style="font-size:24px;margin-top:10px;">Usinage sur fraiseuse à commande numérique</h3>
+            <p style="margin-top:14px;color:var(--forest-2);font-size:15px;">
+              Mise en œuvre complète d'une pièce « plateau supérieur » : prises d'origines (pinule de
+              centrage, cale électronique), programmation conversationnelle d'un cycle de poche circulaire,
+              bridage du brut aluminium et lancement des cycles de surfaçage et d'usinage.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+              <span class="tag">Fraiseuse CN Demeter</span><span class="tag">Programmation conversationnelle</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 : impression 3D -->
+        <div class="project-row" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+          <div class="proj-text" style="order:2;">
+            <span class="eyebrow">SAÉ 1.03 · Prototypage</span>
+            <h3 style="font-size:24px;margin-top:10px;">Impression 3D — du modèle au prototype</h3>
+            <p style="margin-top:14px;color:var(--forest-2);font-size:15px;">
+              Préparation de la fabrication additive dans le slicer : choix de l'orientation pour garantir
+              la solidité de la pièce, réglage du taux de remplissage et des supports, puis anticipation
+              du retrait matière pour un emboîtement sans jeu sur le guidage linéaire.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+              <span class="tag">Slicer</span><span class="tag">FDM</span><span class="tag">Tolérances dimensionnelles</span>
+            </div>
+          </div>
+          <div class="proj-media" style="order:1;">
+            <img src="images/slicer.jpg" alt="Préparation de l'impression 3D dans le slicer" style="width:100%;height:340px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);background:#1a1a1a;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITE SPOTLIGHT -->
+  <section id="qualite" class="section" style="background:var(--forest);color:var(--white);">
+    <div class="wrap">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;" class="grid-2">
+        <div>
+          <span class="eyebrow on-dark">Rigueur qualité · ISO 9001 §8.7</span>
+          <h2 style="font-size:clamp(26px,3vw,34px);margin-top:10px;font-style:italic;color:var(--white);">
+            Transformer un rebut en réflexe qualité
+          </h2>
+          <p style="margin-top:18px;font-size:15.5px;color:rgba(255,253,248,0.82);">
+            Lors d'un usinage sur alliage aluminium, l'absence d'activation de l'arrosage a provoqué une
+            surchauffe et la perte de la pièce. Plutôt que de simplement constater l'incident, j'ai tracé
+            l'écart, remonté à la cause racine par la méthode des 5M et verrouillé sa non-réapparition —
+            exactement la démarche attendue en atelier de production.
+          </p>
+          <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div style="padding:16px 18px;background:rgba(255,253,248,0.06);border:1px solid var(--line-dark);border-radius:14px;">
+              <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);font-weight:600;">Cause racine</span>
+              <p style="margin-top:6px;font-size:13.5px;">Arrosage non enclenché · alliage ductile sensible à l'échauffement</p>
+            </div>
+            <div style="padding:16px 18px;background:rgba(255,253,248,0.06);border:1px solid var(--line-dark);border-radius:14px;">
+              <span style="font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);font-weight:600;">Action préventive</span>
+              <p style="margin-top:6px;font-size:13.5px;">Point « Arrosage ON » ajouté en tête de check-list machine</p>
+            </div>
+          </div>
+          <div style="margin-top:20px;display:flex;align-items:center;gap:10px;">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+            <span style="font-size:13.5px;font-weight:600;">Fiche NC-2025-014 — clôturée</span>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <img src="images/rebut-alu.jpg" alt="Pièce en aluminium fondue suite à un défaut d'arrosage" style="width:100%;height:400px;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px -20px rgba(0,0,0,0.6);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEAR & QUIZ / EXPLOITER -->
+  <section class="section">
+    <div class="wrap">
+      <div class="project-row" style="display:grid;grid-template-columns:0.9fr 1.4fr;gap:44px;align-items:center;">
+        <div class="proj-media" style="display:flex;align-items:center;justify-content:center;background:#141414;border-radius:20px;padding:36px;box-shadow:var(--shadow);">
+          <img src="images/gmp-pursuit.png" alt="Logo du projet Gear & Quiz — GMP Pursuit" style="width:100%;max-width:220px;">
+        </div>
+        <div class="proj-text">
+          <span class="eyebrow">SAÉ 1.04 · Gestion de projet</span>
+          <h3 style="font-size:24px;margin-top:10px;">Gear &amp; Quiz — piloter un projet en équipe</h3>
+          <p style="margin-top:14px;color:var(--forest-2);font-size:15px;max-width:520px;">
+            Conception et fabrication d'un jeu de société en équipe, du cadrage à la soutenance : pilotage
+            de la planification via un diagramme de Gantt, répartition de la charge et respect des jalons
+            entre conception, programmation et fabrication.
+          </p>
+          <div style="margin-top:22px;display:flex;flex-direction:column;gap:6px;max-width:520px;">
+            <div style="display:grid;grid-template-columns:150px 1fr;align-items:center;gap:10px;">
+              <span style="font-size:12px;color:var(--forest-2);">Cadrage &amp; idéation</span>
+              <div style="height:8px;background:var(--paper-2);border-radius:4px;"><div style="width:16%;height:100%;background:var(--forest);border-radius:4px;"></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:150px 1fr;align-items:center;gap:10px;">
+              <span style="font-size:12px;color:var(--forest-2);">Conception plateau</span>
+              <div style="height:8px;background:var(--paper-2);border-radius:4px;"><div style="width:16%;margin-left:16%;height:100%;background:var(--forest-3);border-radius:4px;"></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:150px 1fr;align-items:center;gap:10px;">
+              <span style="font-size:12px;color:var(--forest-2);">Programmation / questions</span>
+              <div style="height:8px;background:var(--paper-2);border-radius:4px;"><div style="width:33%;margin-left:32%;height:100%;background:var(--sage);border-radius:4px;"></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:150px 1fr;align-items:center;gap:10px;">
+              <span style="font-size:12px;color:var(--forest-2);">Fabrication</span>
+              <div style="height:8px;background:var(--paper-2);border-radius:4px;"><div style="width:33%;margin-left:50%;height:100%;background:var(--gold);border-radius:4px;"></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:150px 1fr;align-items:center;gap:10px;">
+              <span style="font-size:12px;color:var(--forest-2);">Soutenance</span>
+              <div style="height:8px;background:var(--paper-2);border-radius:4px;"><div style="width:16%;margin-left:84%;height:100%;background:var(--gold-deep);border-radius:4px;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SYNTHESE -->
+  <section id="synthese" class="section" style="background:var(--paper-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Synthèse</span>
+        <h2>Points forts et axes de progrès pour la 2ᵉ année</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;" class="grid-2">
+        <div class="card" style="padding:28px;">
+          <h3 style="font-size:16px;display:flex;align-items:center;gap:8px;">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold-deep)" stroke-width="2"><path d="M12 2l2.6 6.6 7 .5-5.4 4.5 1.8 6.9L12 16.8 6 20.5l1.8-6.9L2.4 9.1l7-.5L12 2Z"/></svg>
+            Points forts
+          </h3>
+          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--gold-deep);font-weight:700;">—</span>Chaîne numérique CAO/FAO complète, niveau A en autonomie</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--gold-deep);font-weight:700;">—</span>Formalisation de documents métiers (fiche de non-conformité 5M)</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--gold-deep);font-weight:700;">—</span>Analyse fonctionnelle claire et autonome (bête à cornes, pieuvre)</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--gold-deep);font-weight:700;">—</span>Intégration efficace en équipe projet et planification Gantt</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:28px;">
+          <h3 style="font-size:16px;display:flex;align-items:center;gap:8px;">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="2"><path d="M12 20V10M12 10l-4 4M12 10l4 4M5 20h14"/></svg>
+            Objectifs 2ᵉ année
+          </h3>
+          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--sage);font-weight:700;">—</span>Décoder les spécifications GPS complexes au premier coup d'œil</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--sage);font-weight:700;">—</span>Construire sa propre bibliothèque de conditions de coupe</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--sage);font-weight:700;">—</span>Fiabiliser les réglages machine et gagner en rapidité d'exécution</li>
+            <li style="display:flex;gap:10px;font-size:14px;color:var(--forest-2);"><span style="color:var(--sage);font-weight:700;">—</span>Gagner en aisance à l'oral en anglais technique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJET PRO -->
+  <section style="background:var(--forest);color:var(--white);padding-block:clamp(56px,8vw,96px);">
+    <div class="wrap" style="max-width:820px;text-align:center;">
+      <span class="eyebrow on-dark">Projet professionnel</span>
+      <h2 style="font-size:clamp(24px,3.2vw,34px);margin-top:14px;font-style:italic;color:var(--white);line-height:1.35;">
+        « Ma passion pour l'automobile — de la mécanique de série au sport automobile et au motorsport —
+        n'est pas qu'un loisir : elle oriente mon projet, un stage en bureau d'études automobile ou
+        motorsport, puis une école d'ingénieurs spécialisée. »
+      </h2>
+      <p style="margin-top:22px;font-size:14.5px;color:rgba(255,253,248,0.72);">
+        Objectif immédiat : consolider autonomie et rapidité d'exécution sur des projets d'ingénierie
+        plus complexes, au service d'une insertion réussie dans l'industrie automobile — du sport
+        automobile au motorsport.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap" style="text-align:center;max-width:640px;margin-inline:auto;">
+      <span class="eyebrow">Contact</span>
+      <h2 style="font-size:clamp(26px,3.2vw,36px);margin-top:12px;font-style:italic;">Discutons de votre besoin en stage</h2>
+      <p style="margin-top:16px;font-size:15.5px;color:var(--forest-2);">
+        Disponible pour un stage de 10 semaines, du 18 janvier au 26 mars 2027, en conception,
+        industrialisation ou méthodes — mobilité France entière.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
+        <a href="mailto:welmasaoudi@gmail.com" class="btn btn-primary">
+          <svg class="icon" style="width:17px;height:17px" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          welmasaoudi@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/walid-el-masaoud" target="_blank" rel="noopener" class="btn btn-outline-dark">
+          <svg class="icon" style="width:17px;height:17px" viewBox="0 0 24 24" fill="none" stroke="var(--forest)" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 0 1 4 0V17M12 10v7"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:var(--forest);color:rgba(255,253,248,0.6);padding-block:28px;text-align:center;font-size:13px;">
+    Walid El Masaoudi — BUT Génie Mécanique &amp; Productique — IUT de Béthune · Université d'Artois
+  </footer>
+
+</div>
+</body>
+</html>
